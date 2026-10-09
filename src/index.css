@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-display {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Neon Glow Utilities */
+.neon-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 25px rgba(0, 229, 255, 0.5), 0 0 40px rgba(0, 229, 255, 0.3);
+}
+
+.neon-glow-green {
+  text-shadow: 0 0 12px rgba(57, 255, 136, 0.9), 0 0 30px rgba(57, 255, 136, 0.6), 0 0 50px rgba(57, 255, 136, 0.4);
+}
+
+.neon-glow-pink {
+  text-shadow: 0 0 10px rgba(255, 79, 216, 0.8), 0 0 25px rgba(255, 79, 216, 0.5);
+}
+
+.neon-box-cyan {
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5), 0 0 35px rgba(0, 229, 255, 0.25), inset 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.neon-box-green {
+  box-shadow: 0 0 25px rgba(57, 255, 136, 0.7), 0 0 50px rgba(57, 255, 136, 0.4), inset 0 0 20px rgba(57, 255, 136, 0.3);
+}
+
+.neon-box-red {
+  box-shadow: 0 0 30px rgba(255, 42, 77, 0.6), 0 0 60px rgba(255, 42, 77, 0.3), inset 0 0 25px rgba(255, 42, 77, 0.3);
+}
+
+.neon-box-pink {
+  box-shadow: 0 0 20px rgba(255, 79, 216, 0.5), 0 0 40px rgba(255, 79, 216, 0.25);
+}
+
+/* Subtle arcade background grid */
+.arcade-grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Pulse animation for waiting */
+@keyframes suspense-pulse {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.animate-suspense {
+  animation: suspense-pulse 2s ease-in-out infinite;
+}
+
+@keyframes flash-shock {
+  0% {
+    transform: scale(0.96);
+    filter: brightness(1.4);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-flash-shock {
+  animation: flash-shock 0.25s cubic-bezier(0.1, 0.9, 0.2, 1);
+}

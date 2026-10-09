@@ -1,0 +1,6 @@
+{
+  "name": "FLASH TAP! ⚡ Fast-Reaction Arcade",
+  "description": "Test your reflexes in FLASH TAP! A futuristic neon arcade reaction speed game with glowing visual effects, audio synth, millisecond precision, and 10-round challenges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
